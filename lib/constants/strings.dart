@@ -1,0 +1,11 @@
+const String strEnter="প্রবেশ করুন";
+const String strEmail="ইমেইল";
+const String strPassword="পাসওয়ার্ড";
+const String strSignIn="সাইন ইন করুন";
+const String strCheckAgreement="আমি মেনে নিচ্ছে এই পরিবেবার সকল শর্তাবলি";
+const String strSearch = "নাম দ্বারা অনুসন্ধ্যান";
+const String strTotal = "মোট";
+const String strOrderNow = "";
+const String strCheckoutConfirm = "";
+const String strEdit = "";
+const String strConfirma = "";
