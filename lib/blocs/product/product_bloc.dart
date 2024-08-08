@@ -24,11 +24,14 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
       if (token != null) {
         final productList = await productRepository.fetchProductList(token);
         _allProducts = productList;
+        print("All product bloc ${_allProducts.toString()}");
         emit(ProductListLoaded(productList: productList));
       } else {
         emit(ProductListError('No token found'));
       }
-    } catch (error) {
+    } catch (error,stacktrace) {
+      print('Error fetching product list: $error');
+      print('Stacktrace: $stacktrace');
       emit(ProductListError(error.toString()));
     }
   }
